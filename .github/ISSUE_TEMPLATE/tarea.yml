@@ -1,0 +1,22 @@
+name: "🔨 Tarea"
+description: Algo concreto que hay que hacer
+labels: ["tarea"]
+body:
+  - type: textarea
+    id: que
+    attributes:
+      label: ¿Qué hay que hacer?
+    validations:
+      required: true
+  - type: textarea
+    id: hecho
+    attributes:
+      label: ¿Cuándo está hecho?
+      description: Lista de comprobación para saber que está terminado.
+      value: |
+        - [ ] …
+  - type: dropdown
+    id: quien
+    attributes:
+      label: ¿Quién lo lleva?
+      options: [Alba, Bruno, Carla, Sin asignar]

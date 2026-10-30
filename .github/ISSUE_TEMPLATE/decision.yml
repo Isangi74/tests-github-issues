@@ -1,0 +1,28 @@
+name: "⚖️ Decisión"
+description: Algo que tenemos que decidir entre los tres
+title: "Decidir: "
+labels: ["decisión"]
+body:
+  - type: textarea
+    id: que
+    attributes:
+      label: ¿Qué hay que decidir?
+    validations:
+      required: true
+  - type: textarea
+    id: opciones
+    attributes:
+      label: Opciones
+      description: Cada opción con sus pros y sus contras. Si hay una recomendada, márcala.
+      value: |
+        - **A)** …
+        - **B)** …
+    validations:
+      required: true
+  - type: input
+    id: fecha
+    attributes:
+      label: ¿Para cuándo? (dd/mm/aaaa)
+  - type: markdown
+    attributes:
+      value: "Se cierra con un comentario que empiece por **DECIDIDO:**. Solo lo cierra un humano."

@@ -1,0 +1,24 @@
+name: "❓ Duda"
+description: Algo que no sabemos y alguien tiene que responder
+title: "Duda: "
+labels: ["duda"]
+body:
+  - type: textarea
+    id: pregunta
+    attributes:
+      label: ¿Qué no sabemos?
+      description: La pregunta, en una o dos frases.
+    validations:
+      required: true
+  - type: dropdown
+    id: quien
+    attributes:
+      label: ¿Quién debería responder?
+      options: [Alba, Bruno, Carla, Cualquiera]
+    validations:
+      required: true
+  - type: textarea
+    id: bloquea
+    attributes:
+      label: ¿Qué bloquea si no se responde?
+      description: "Enlaza los issues afectados, p. ej. #3"
